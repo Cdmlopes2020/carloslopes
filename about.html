@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carlos | Grid estilo</title>
+
+  <!-- ========== FONTS ========== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- ========== CSS ========== -->
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body id="siteBody" class="backgrounddark">
+
+  <div class="noise-overlay">
+    <img src="assets/noise.jpg" alt="noise texture">
+  </div>
+
+
+
+  <!-- ========== HEADER ========== -->
+
+  <nav class="flex items-center justify-between text-white p-6">
+    <!-- ESQUERDA -->
+    <div class="flex items-center space-x-6">
+      <a href="index.html" id="linkCarlos"
+        class="text-xs sm:text-sm md:text-sm font-['Fira_Mono'] text-white meuslinks">
+        Carlos Lopes
+      </a>
+      <span class="text-xs sm:text-sm md:text-sm font-['Fira_Mono']">Graphic & Web Design </span>
+    </div>
+
+    <!-- DIREITA BOTÃO TOOGLE -->
+    <div>
+
+      <label class="inline-flex items-center cursor-pointer">
+        <!-- Input escondido -->
+        <input type="checkbox" class="sr-only" id="toggleMode" />
+
+        <!-- Trilho e bola dentro -->
+        <div class="track w-10 h-5 bg-gray-300 rounded-full relative transition-colors duration-300">
+          <div class="ball absolute top-0.5 left-0.5 bg-white w-4 h-4 rounded-full transition-transform duration-300">
+          </div>
+        </div>
+      </label>
+
+    </div>
+  </nav>
+  <!-- ========== BODY ========== -->
+
+  <section class="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-12">
+    <!-- Esquerda -->
+    <div>
+      <!-- Linha + Texto -->
+      <div class="flex items-center gap-4 mb-6">
+        <div class="w-8 border-t border-white"></div>
+        <h2 class="text-sm uppercase tracking-widest font-medium text-white font-['Fira_Mono']">About Me</h2>
+      </div>
+
+      <!-- Nome -->
+      <h1 class="text-5xl font-bold text-white mb-6 font-['Fira_Mono']">Carlos Lopes</h1>
+
+      <!-- Descrição -->
+      <p class="text-gray-200 mb-8 leading-relaxed max-w-md">
+        Hi, my name is Carlos, I’m 26 years old, and I’m a graphic and web designer. I work in graphic design, social
+        media management, video editing, and web design. I’m creative, ambitious, and highly responsible, always
+        committed to delivering quality and innovative solutions.
+      </p>
+
+      <!-- Botão -->
+      <a href="#" class="inline-flex items-center gap-1 text-white meuslinks font-['Fira_Mono']">
+        Contact me
+        <span class="material-symbols-outlined text-base font-['Fira_Mono']">→</span>
+      </a>
+    </div>
+
+    <!-- Direita -->
+    <div class="space-y-8" id="experienceList">
+
+      <div class="flex items-center gap-4 mb-6">
+        <h2 class="text-sm uppercase tracking-widest font-medium text-white font-['Fira_Mono']">Experience</h2>
+
+      </div>
+
+      <!-- ITEM 1 -->
+      <div class="group space-y-1">
+        <div class="flex justify-between items-center">
+          <div>
+            <h3 class="text-lg font-medium text-white font-['Fira_Mono']">Graphic Designer and Social Media Manager</h3>
+            <p class="text-white text-sm">In.dustria | Arquitetura & Construção</p>
+            <span class="text-gray-400 text-sm">2021 - Present</span>
+          </div>
+          <button onclick="toggleText(this)" class="text-white text-3xl">+</button>
+        </div>
+        <div class="hidden text-white text-xs pt-2 font-['Fira_Mono'] border-b border-white/15 pb-4">
+          Responsável por branding, gestão de redes sociais e produção de conteúdo visual para campanhas.
+        </div>
+      </div>
+
+      <!-- ITEM 2 -->
+      <div class="group space-y-1">
+        <div class="flex justify-between items-center">
+          <div>
+            <h3 class="text-lg font-medium text-white font-['Fira_Mono']">Graphic Designer</h3>
+            <p class="text-white text-sm">Freelancer</p>
+            <span class="text-gray-400 text-sm">2017 - Present</span>
+          </div>
+          <button onclick="toggleText(this)" class="text-white text-3xl">+</button>
+        </div>
+        <div class="hidden text-white text-xs pt-2 font-['Fira_Mono'] border-b border-white/15 pb-4">
+          Responsável por branding, gestão de redes sociais e produção de conteúdo visual para campanhas.
+        </div>
+      </div>
+
+      <!-- ITEM 3 -->
+      <div class="group space-y-1">
+        <div class="flex justify-between items-center">
+          <div>
+            <h3 class="text-lg font-medium text-white font-['Fira_Mono']">Web Designer</h3>
+            <p class="text-white text-sm">Freelancer</p>
+            <span class="text-gray-400 text-sm">2020 - Present</span>
+          </div>
+          <button onclick="toggleText(this)" class="text-white text-3xl">+</button>
+        </div>
+        <div class="hidden text-white text-xs pt-2 font-['Fira_Mono'] border-b border-white/15 pb-4">
+          Responsável por branding, gestão de redes sociais e produção de conteúdo visual para campanhas.
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+    
+
+  </section>
+
+
+<div class="grid grid-cols-9 pl-12 pr-12">  
+  <div class="sm:col-span-3"> </div>
+   <div class="col-span-9 sm:col-span-3 rounded-xl  customcard pt-32 sm:pt-12 pb-2">
+      <div class="grid-rows-1 flex ">
+        <h1 class="text-white pl-4 font-['Fira_Mono'] portfolio">Portfólio</h1>
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#ffffff" stroke-width="1" stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </g>
+        </svg>
+      </div>
+    </div>
+</div>
+
+
+<section class="grid grid-cols-4 pt-24">   
+  <div class=" col-span-4 sm:col-span-4 border-t border-white "></div> <!-- BORDER-->
+
+<div class="col-span-4 sm:col-span-2  flex flex-col  item-center pt-2 pl-12 pr-12" > 
+<a href="" class="text-white font-['Fira_Mono'] ">geral@idealize.pt</a>
+<a href="" class="text-white font-['Fira_Mono'] ">+351 927404221</a>
+</div>
+
+<div class="col-span-4 sm:col-span-2  flex flex-col  item-center sm:items-end sm:justify-end pt-2 pl-12 pr-12"> 
+  <a href="" class="text-white font-['Fira_Mono'] hover:font-medium">Instagram</a> 
+  <a href="" class="text-white font-['Fira_Mono'] hover:font-medium">Linkedin</a>
+  <a href="" class="text-white font-['Fira_Mono'] hover:font-medium">Facebook</a>
+  <a href="" class="text-white font-['Fira_Mono'] hover:font-medium">Behance</a>
+</div>
+ 
+ 
+
+  </section>
+
+
+
+<script>
+      function toggleText(button) {
+        const hiddenText = button.parentElement.nextElementSibling;
+        hiddenText.classList.toggle("hidden");
+        button.textContent = button.textContent === "+" ? "−" : "+";
+      }
+    </script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

@@ -29,38 +29,23 @@
 
     <h1 class="text-center font-['Fira_Mono'] text-6xl animate__animated animate__tada ">Welcome.</h1>
   </div>
-<div class="noise-overlay">
-  <img src="assets/noise.jpg" alt="noise texture">
-</div>
+  <div class="noise-overlay">
+    <img src="assets/noise.jpg" alt="noise texture">
+  </div>
 
-<style>
-  .noise-overlay {
-  position: fixed;
-  inset: 0; /* top: 0; right: 0; bottom: 0; left: 0 */
-  z-index: 50; /* ou ajusta para ficar por cima de fundo mas atrás de UI */
-  pointer-events: none; /* permite clicar através */
-  mix-blend-mode: overlay; /* efeito de sobreposição subtil */
-  opacity: 0.5; /* controla a intensidade do noise */
-}
-
-.noise-overlay img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-</style>
 
   <div class="textbehind text-center">
     <h1 class="font-['Fira_Mono'] text-6xl sm:text-8xl"> Portfólio</h1>
   </div>
-  
+
 
   <!-- ========== HEADER ========== -->
 
   <nav class="flex items-center justify-between text-white p-6">
     <!-- ESQUERDA -->
     <div class="flex items-center space-x-6">
-      <a href="#" id="linkCarlos" class="text-xs sm:text-sm md:text-sm font-['Fira_Mono'] animate__animated text-white">
+      <a href="index.html" id="linkCarlos"
+        class="text-xs sm:text-sm md:text-sm font-['Fira_Mono'] text-white meuslinks">
         Carlos Lopes
       </a>
       <span class="text-xs sm:text-sm md:text-sm font-['Fira_Mono']">Graphic & Web Design </span>
@@ -89,9 +74,10 @@
 
   <div class="grid grid-cols-4  sm:grid-cols-8 md:grid-cols-8 gap-2 pt-44 p-6">
     <!-- ROW 1-->
-    <div class="glass customcard col-span-4 rounded-xl sm:col-span-4 md:col-span-2 pt-32 sm:pt-64 pb-2 ">
+    <a href="about.html" class="glass customcard col-span-4 rounded-xl sm:col-span-4 md:col-span-2 pt-32 sm:pt-64 pb-2 ">
+
       <div class="grid-rows-1 flex ">
-        <h1 class="text-white pl-4 font-['Fira_Mono'] about" >About</h1>
+        <h1  class="text-white pl-4 font-['Fira_Mono'] about">About</h1>
         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
           <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -102,7 +88,7 @@
         </svg>
 
       </div>
-    </div>
+    </a>
 
     <div class="col-span-4 rounded-xl sm:col-span-4 md:col-span-6 customcard pt-32 sm:pt-64 pb-2">
       <div class="grid-rows-1 flex ">

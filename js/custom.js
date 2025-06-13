@@ -28,21 +28,6 @@
   });
 
 
-  const link = document.getElementById('linkCarlos');
-
-  link.addEventListener('mouseenter', () => {
-    // Remove se já existir (para reiniciar)
-    link.classList.remove('animate__flipInX');
-
-    // Força o reflow (para reiniciar a animação)
-    void link.offsetWidth;
-
-    // Adiciona a classe de animação
-    link.classList.add('animate__flipInX');
-  });
-
-
-
 
 
 
