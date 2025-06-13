@@ -1,349 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
+
 <head>
-  <meta charset="utf-8">
-  <title>Porfolio Carlos Lopes</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carlos | Grid estilo</title>
 
-  <!-- Favicons -->
-  <link href="img/favicon-32x32.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-    <link href="css/mycss.css">
+  <!-- ========== FONTS ========== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- ========== CSS ========== -->
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
 
 </head>
-    
-    <style> 
-    
-    
-    .mine{text-align: center !important;
-         padding-bottom: 50px;
-        padding-top: 50px;
-        color: white;
-        }
-        
-        
-        #page-top{ 
-        background-color: #361632;
-        }    
-        
-        .back-to-top { 
-        background: #9e188e ;
-        }
-        
-        .box-shadow-full{ 
-        
-        background-color: #130b12;
-        }
-        
-        .title-s {
-    font-weight: 600;
-    color: #ffffff;
-    font-size: 1.1rem;
-}
-        
-        body {
-    background-color: #f5f5f5;
-    color: #8e8e8e;
-}
-    
-        h1, h2, h3, h4, h5, h6 {
-    color: #ffffff;
-}
-        
-        .title-left:before {
-    content: '';
-    position: absolute;
-    height: 3px;
-    background-color: #fff;
-    width: 100px;
-    bottom: -12px;
-}
-        
-        .skill-mf span {
-    color: #ffffff;
-}
-        
-        .skill-mf .progress .progress-bar {
-    height: .7rem;
-    background-color: #6b3965;
-}
-       
-        .box-shadow-full {
-    padding: 3rem 1.25rem;
-    position: relative;
-    margin-bottom: 3rem;
-    z-index: 2;
-    box-shadow: 19px 20px 20px 20px rgba(0, 0, 0, 0.06), 0 25px 55px 0 rgba(0, 0, 0, 0.2);
-}
-        
-        .eu {
-    box-shadow: 9px 11px 20px 8px rgba(0, 0, 0, 0.06), inset 0px 0px 0px 0 rgba(0, 0, 0, 0.2);
-}
-        
-        .meufooter{ 
-            margin-top: 200px;
-            margin-bottom: 0px;
-            background-color: white;
-            text-align: center;}
-        
-        .texto{ 
-        color: #6b3965;
-        padding-top: 10px;
-        padding-bottom: 20px;}
-        
-        .texto2{ 
-        color: #6b3965;
-        padding-top: 10px;
-        padding-bottom: 0px;
-        }
-        
-      p {
-    display: block;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-        
-        .skill-mf .progress .progress-bar:hover {
-            background-color: #9e188e;
-        }
-        
-    </style>
 
-<body id="page-top">
+<body id="siteBody" class="backgrounddark">
+  <div id="splash" class="test">
 
-  <!--/ Nav Star /-->
-  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll" href="#page-top">Carlos Lopes</a>
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
-        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#work">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#cont">Contact</a>
-          </li>
-        </ul>
-      </div>
+
+    <h1 class="text-center font-['Fira_Mono'] text-6xl animate__animated animate__tada ">Welcome.</h1>
+  </div>
+<div class="noise-overlay">
+  <img src="assets/noise.jpg" alt="noise texture">
+</div>
+
+<style>
+  .noise-overlay {
+  position: fixed;
+  inset: 0; /* top: 0; right: 0; bottom: 0; left: 0 */
+  z-index: 50; /* ou ajusta para ficar por cima de fundo mas atrás de UI */
+  pointer-events: none; /* permite clicar através */
+  mix-blend-mode: overlay; /* efeito de sobreposição subtil */
+  opacity: 0.5; /* controla a intensidade do noise */
+}
+
+.noise-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>
+
+  <div class="textbehind text-center">
+    <h1 class="font-['Fira_Mono'] text-6xl sm:text-8xl"> Portfólio</h1>
+  </div>
+  
+
+  <!-- ========== HEADER ========== -->
+
+  <nav class="flex items-center justify-between text-white p-6">
+    <!-- ESQUERDA -->
+    <div class="flex items-center space-x-6">
+      <a href="#" id="linkCarlos" class="text-xs sm:text-sm md:text-sm font-['Fira_Mono'] animate__animated text-white">
+        Carlos Lopes
+      </a>
+      <span class="text-xs sm:text-sm md:text-sm font-['Fira_Mono']">Graphic & Web Design </span>
+    </div>
+
+    <!-- DIREITA BOTÃO TOOGLE -->
+    <div>
+
+      <label class="inline-flex items-center cursor-pointer">
+        <!-- Input escondido -->
+        <input type="checkbox" class="sr-only" id="toggleMode" />
+
+        <!-- Trilho e bola dentro -->
+        <div class="track w-10 h-5 bg-gray-300 rounded-full relative transition-colors duration-300">
+          <div class="ball absolute top-0.5 left-0.5 bg-white w-4 h-4 rounded-full transition-transform duration-300">
+          </div>
+        </div>
+      </label>
+
     </div>
   </nav>
-  <!--/ Nav End /-->
+  <!-- ========== BODY ========== -->
 
-  <!--/ Intro Skew Star /-->
-  <div id="home" class="intro route bg-image" style="background-image: url(img/medusas.png)">
-    <div class="overlay-itro"></div>
-    <div class="intro-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="intro-title mb-4">My name is Carlos Lopes</h1>
-          <p class="intro-subtitle"><span class="text-slider-items">3D Artist,Web Developer,Web Designer,VR/AR,Graphic Designer</span><strong class="text-slider"></strong></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-        </div>
+
+
+
+  <div class="grid grid-cols-4  sm:grid-cols-8 md:grid-cols-8 gap-2 pt-44 p-6">
+    <!-- ROW 1-->
+    <div class="glass customcard col-span-4 rounded-xl sm:col-span-4 md:col-span-2 pt-32 sm:pt-64 pb-2 ">
+      <div class="grid-rows-1 flex ">
+        <h1 class="text-white pl-4 font-['Fira_Mono'] about" >About</h1>
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#ffffff" stroke-width="1" stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </g>
+        </svg>
+
       </div>
     </div>
-  </div>
-  <!--/ Intro Skew End /-->
 
-  <section id="about" class="about-mf sect-pt4 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="box-shadow-full">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="row">
-                  <div class="col-sm-6 col-md-5">
-                    <div class="about-img">
-                      <img src="img/carlos.jpg" class="img-fluid rounded b-shadow-a" alt="">
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-7">
-                    <div class="about-info">
-                      <p><span class="title-s">Name: </span> <span>Carlos Lopes </span></p>
-                      <p><span class="title-s">Profile: </span> <span>3D Artist and Web Development</span></p>
-                      <p><span class="title-s">Email: </span> <span>cdmlopes1999@gmail.com</span></p>
-                      <p><span class="title-s">Phone: </span> <span>+351 927 404 221</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="skill-mf">
-                  <p class="title-s">Skill</p>
-                  <span>HTML</span> <span class="pull-right">90%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="85" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>CSS</span> <span class="pull-right">55%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="75" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>PHP</span> <span class="pull-right">65%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="50" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>3D</span> <span class="pull-right">75%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="90" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                    <span>New technologies</span> <span class="pull-right">85%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="90" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="about-me pt-4 pt-md-0">
-                  <div class="title-box-2">
-                    <h5 class="title-left">
-                      <b>About me  </b>
-                    </h5>
-                  </div>
-                  <p class="lead">
-                   Hello, I'm Carlos Lopes, Portuguese, I attend the last year of my degree in visual arts and multimedia, at the Polytechnic Institute of Viseu, and this is my portfolio. 
-                  </p>
-                   <p class="lead">
-                  During this visit on my website, you will be able to find everything from jobs to skills developed by me, as well to contact me for any possible job. Although I have developed skills in other areas of work within multimedia, I focus mainly on developing content for the Web as well as creating 3D artifacts and turning them into virtual reality or augmented reality.
-                      </p>
-                </div>
-              </div>
-            </div>
+    <div class="col-span-4 rounded-xl sm:col-span-4 md:col-span-6 customcard pt-32 sm:pt-64 pb-2">
+      <div class="grid-rows-1 flex ">
+        <h1 class="text-white pl-4 font-['Fira_Mono'] portfolio">Portfólio</h1>
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#ffffff" stroke-width="1" stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <!-- ROW 2-->
+
+    <div class="col-span-2 rounded-xl sm:col-span-4 md:col-span-4 customcard pt-32 sm:pt-64 pb-2">
+      <div class="grid-rows-1 flex ">
+        <h1 class="text-white pl-4 font-['Fira_Mono'] contact">Contact</h1>
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#ffffff" stroke-width="1" stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </g>
+        </svg>
+      </div>
+
+    </div>
+
+    <div class="col-span-2 rounded-xl sm:col-span-2 md:col-span-2 customcard pt-32 sm:pt-64 pb-2">
+
+      <img class="avatar" src="assets/avatar.jpg">
+    </div>
+
+    <!-- BLOCO AGRUPADO -->
+    <div class="col-span-4 rounded-xl sm:col-span-2 md:col-span-2 flex flex-col gap-2">
+      <!-- NESTED ROW 1 -->
+      <div class="customcard relative overflow-hidden rounded-xl pt-16 sm:pt-32 pb-2 h-32">
+        <!-- Texto animado vai-e-volta (loop contínuo) -->
+        <div class="absolute top-1/2 left-0 w-full -translate-y-1/2 pointer-events-none overflow-hidden">
+          <div class="marquee-track">
+            <img src="assets/Group 1.png" class="minespan" />
+            <img src="assets/Group 1.png" class="minespan" />
           </div>
         </div>
       </div>
-        
-    </div>
-  </section>
-    
-    <div class="container" > 
-        <div class="row">
-        <div class="col-4">
-            </div>
-            <div class="col-4">
-                
-                <h1 class="mine"> <b> MY WORK </b> </h1>
-            </div>
-            <div class="col-4">
-            </div>
-        
-        
-        
+      <!-- NESTED ROW 2
+        -->
+      <div class="customcard  rounded-xl pt-16 sm:pt-32 pb-2">
+        <div class="grid-rows-1 flex ">
+          <h1 class="text-white pl-4 font-['Fira_Mono'] ">Resume</h1>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#ffffff" stroke-width="1" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </g>
+          </svg>
         </div>
-    <div class="row ups">
-    <div class="col-12 gape" id="work">
-        
-                <div class="sketchfab-embed-wrapper">
-    <iframe title="A 3D model" width="540" height="380" src="https://sketchfab.com/models/e0d71dcd7fa549469d782e19e2958a1b/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-    <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-        <a href="https://sketchfab.com/3d-models/forest-e0d71dcd7fa549469d782e19e2958a1b?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;"></a>
-         <a href="https://sketchfab.com/Carlos.Lopes?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;"></a>
-        <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;"></a>
-    </p>
-</div>
-    </div>   
-         <div class="col-12 gape"> 
-             <div class="sketchfab-embed-wrapper">
-    <iframe title="A 3D model" width="540" height="380" src="https://sketchfab.com/models/8cd07fc3a40f476c8880520096c08045/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-    <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-        <a href="https://sketchfab.com/3d-models/viking-8cd07fc3a40f476c8880520096c08045?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;"></a>
-        <a href="https://sketchfab.com/Carlos.Lopes?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;"></a>
-        <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;"></a>
-    </p>
-</div>
-
-    </div>  
-       
-        
-        </div>
-        
-        <div class="row ups">
-    <div class="col-12 gape" >
-        
-        <div class="sketchfab-embed-wrapper">
-    <iframe title="A 3D model" width="540" height="380" src="https://sketchfab.com/models/d335063a973441f0a244c69ec907d560/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-    <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-        <a href="https://sketchfab.com/3d-models/peca-arqueologica-d335063a973441f0a244c69ec907d560?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;"></a>
-        <a href="https://sketchfab.com/Carlos.Lopes?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;"></a>
-        <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;"></a>
-    </p>
-</div>
-
-        
-        
-            </div> 
-      
-
-    
-      
-    
-    
+      </div>
     </div>
-    </div>
-   
-    
-    <div class="meufooter" id="cont">
-         <p class="texto2"> <b>  cdmlopes1999@gmail.com  / +351 927 404 221 </b> </p>
-            <p class="texto"> <b>Created </b> by Carlos Lopes in april 2020  </p>
-    </div>
-    
-    
-            
-    
- 
 
-  <!--/ Section Services Star /-->
- 
-  <!--/ Section Contact-footer End /-->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <div id="preloader"></div>
+  </div>
 
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/popper/popper.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/counterup/jquery.waypoints.min.js"></script>
-  <script src="lib/counterup/jquery.counterup.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/lightbox/js/lightbox.min.js"></script>
-  <script src="lib/typed/typed.min.js"></script>
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-
+  <script src="js/custom.js"></script>
 </body>
+
 </html>
