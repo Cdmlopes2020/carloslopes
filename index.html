@@ -23,7 +23,12 @@
 
 </head>
 
-<body id="siteBody" class="backgrounddark">
+<body id="siteBody" data-theme="dark">
+
+    <div class="cursor hidden lg:block"></div>
+
+   
+   
   <div id="splash" class="test">
 
 
@@ -35,7 +40,7 @@
 
 
   <div class="textbehind text-center">
-    <h1 class="font-['Fira_Mono'] text-6xl sm:text-8xl"> Portfólio</h1>
+    <h1 data-theme="dark" class="font-['Fira_Mono'] text-6xl sm:text-8xl textomudar "> Portfólio</h1>
   </div>
 
 
@@ -43,12 +48,12 @@
 
   <nav class="flex items-center justify-between text-white p-6">
     <!-- ESQUERDA -->
-    <div class="flex items-center space-x-6">
-      <a href="index.html" id="linkCarlos"
-        class="text-xs sm:text-sm md:text-sm font-['Fira_Mono'] text-white meuslinks">
+    <div id="navlinks" class="flex items-center space-x-6">
+      <a data-theme="dark" href="index.html" id="linkCarlos"
+        class="text-xs font-medium sm:text-sm md:text-sm font-['Fira_Mono']  textomudar meuslinks hover-target">
         Carlos Lopes
       </a>
-      <span class="text-xs sm:text-sm md:text-sm font-['Fira_Mono']">Graphic & Web Design </span>
+      <span data-theme="dark" class="text-xs sm:text-sm md:text-sm font-['Fira_Mono'] textomudar">Graphic & Web Design </span>
     </div>
 
     <!-- DIREITA BOTÃO TOOGLE -->
@@ -72,48 +77,49 @@
 
 
 
-  <div class="grid grid-cols-4  sm:grid-cols-8 md:grid-cols-8 gap-2 pt-44 p-6">
+  <div class="grid grid-cols-4  sm:grid-cols-8 md:grid-cols-8 gap-2 pt-44 p-6 ">
     <!-- ROW 1-->
+     
     <a href="about.html" class="glass customcard col-span-4 rounded-xl sm:col-span-4 md:col-span-2 pt-32 sm:pt-64 pb-2 ">
 
-      <div class="grid-rows-1 flex ">
-        <h1  class="text-white pl-4 font-['Fira_Mono'] about">About</h1>
-        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+      <div  class="grid-rows-1 flex ">
+        <h1 data-theme="dark"  class=" pl-4 font-['Fira_Mono'] about textomudar hover-target ">About</h1>
+        <svg class="w-4 h-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
           <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
           <g id="SVGRepo_iconCarrier">
-            <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#ffffff" stroke-width="1" stroke-linecap="round"
-              stroke-linejoin="round"></path>
+            <path data-theme="dark"  d="M7 17L17 7M17 7H8M17 7V16" stroke-width="1" stroke-linecap="round"
+              stroke-linejoin="round" class="textomudar"></path>
           </g>
         </svg>
 
       </div>
     </a>
 
-    <div class="col-span-4 rounded-xl sm:col-span-4 md:col-span-6 customcard pt-32 sm:pt-64 pb-2">
+    <a href="portfolio.html" class="col-span-4 rounded-xl sm:col-span-4 md:col-span-6 customcard pt-32 sm:pt-64 pb-2">
       <div class="grid-rows-1 flex ">
-        <h1 class="text-white pl-4 font-['Fira_Mono'] portfolio">Portfólio</h1>
+        <h1 data-theme="dark"  class=" pl-4 font-['Fira_Mono'] portfolio textomudar hover-target ">Portfólio</h1>
         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
           <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
           <g id="SVGRepo_iconCarrier">
-            <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#ffffff" stroke-width="1" stroke-linecap="round"
-              stroke-linejoin="round"></path>
+             <path data-theme="dark"  d="M7 17L17 7M17 7H8M17 7V16" stroke-width="1" stroke-linecap="round"
+              stroke-linejoin="round" class="textomudar"></path>
           </g>
         </svg>
       </div>
-    </div>
+    </a>
     <!-- ROW 2-->
 
     <div class="col-span-2 rounded-xl sm:col-span-4 md:col-span-4 customcard pt-32 sm:pt-64 pb-2">
       <div class="grid-rows-1 flex ">
-        <h1 class="text-white pl-4 font-['Fira_Mono'] contact">Contact</h1>
+        <h1 data-theme="dark"  class=" pl-4 font-['Fira_Mono'] contact textomudar hover-target ">Contact</h1>
         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
           <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
           <g id="SVGRepo_iconCarrier">
-            <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#ffffff" stroke-width="1" stroke-linecap="round"
-              stroke-linejoin="round"></path>
+            <path data-theme="dark"  d="M7 17L17 7M17 7H8M17 7V16" stroke-width="1" stroke-linecap="round"
+              stroke-linejoin="round" class="textomudar"></path>
           </g>
         </svg>
       </div>
@@ -141,13 +147,13 @@
         -->
       <div class="customcard  rounded-xl pt-16 sm:pt-32 pb-2">
         <div class="grid-rows-1 flex ">
-          <h1 class="text-white pl-4 font-['Fira_Mono'] ">Resume</h1>
+          <h1 data-theme="dark"  class="pl-4 font-['Fira_Mono'] textomudar hover-target ">Resume</h1>
           <svg class="w-4 h-4" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
             <g id="SVGRepo_iconCarrier">
-              <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#ffffff" stroke-width="1" stroke-linecap="round"
-                stroke-linejoin="round"></path>
+               <path data-theme="dark"  d="M7 17L17 7M17 7H8M17 7V16" stroke-width="1" stroke-linecap="round"
+              stroke-linejoin="round" class="textomudar"></path>
             </g>
           </svg>
         </div>
@@ -156,8 +162,11 @@
 
 
   </div>
+  
 
   <script src="js/custom.js"></script>
+
+ 
 </body>
 
 </html>

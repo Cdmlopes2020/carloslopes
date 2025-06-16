@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carlos | Grid estilo</title>
+
+  <!-- ========== FONTS ========== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- ========== CSS ========== -->
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body id="siteBody" data-theme="dark">
+  <div class="cursor hidden lg:block"></div>
+
+  <div class="noise-overlay">
+    <img src="assets/noise.jpg" alt="noise texture">
+  </div>
+
+
+
+  <!-- ========== HEADER ========== -->
+
+ <nav class="flex items-center justify-between text-white p-6">
+    <!-- ESQUERDA -->
+    <div id="navlinks" class="flex items-center space-x-6">
+      <a data-theme="dark" href="index.html" id="linkCarlos"
+        class="text-xs font-medium sm:text-sm md:text-sm font-['Fira_Mono']  textomudar meuslinks">
+        Carlos Lopes
+      </a>
+      <span data-theme="dark" class="text-xs sm:text-sm md:text-sm font-['Fira_Mono'] textomudar">Graphic & Web Design </span>
+    </div>
+
+    <!-- DIREITA BOTÃO TOOGLE -->
+    <div>
+
+      <label class="inline-flex items-center cursor-pointer">
+        <!-- Input escondido -->
+        <input type="checkbox" class="sr-only" id="toggleMode" />
+
+        <!-- Trilho e bola dentro -->
+        <div class="track w-10 h-5 bg-gray-300 rounded-full relative transition-colors duration-300">
+          <div class="ball absolute top-0.5 left-0.5 bg-white w-4 h-4 rounded-full transition-transform duration-300">
+          </div>
+        </div>
+      </label>
+
+    </div>
+  </nav>
+  <!-- ========== BODY ========== -->
+
+ 
+
+
+
+
+
+<section class="grid grid-cols-4 pt-24">   
+  <div class=" col-span-4 sm:col-span-4 border-t border-white "></div> <!-- BORDER-->
+
+<div class="col-span-4 sm:col-span-2  flex flex-col  item-center pt-2 pl-12 pr-12" > 
+<a href="" class="text-white font-['Fira_Mono'] ">geral@idealize.pt</a>
+<a href="" class="text-white font-['Fira_Mono'] ">+351 927404221</a>
+</div>
+
+<div class="col-span-4 sm:col-span-2  flex flex-col  item-center sm:items-end sm:justify-end pt-2 pl-12 pr-12"> 
+  <a href="" class="text-white font-['Fira_Mono'] hover:font-medium">Instagram</a> 
+  <a href="" class="text-white font-['Fira_Mono'] hover:font-medium">Linkedin</a>
+  <a href="" class="text-white font-['Fira_Mono'] hover:font-medium">Facebook</a>
+  <a href="" class="text-white font-['Fira_Mono'] hover:font-medium">Behance</a>
+</div>
+ 
+ 
+
+  </section>
+
+
+
+<script>
+      function toggleText(button) {
+        const hiddenText = button.parentElement.nextElementSibling;
+        hiddenText.classList.toggle("hidden");
+        button.textContent = button.textContent === "+" ? "−" : "+";
+      }
+    </script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

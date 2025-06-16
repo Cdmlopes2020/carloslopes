@@ -1,3 +1,110 @@
+body[data-theme="dark"] {
+  background-color: #111111;
+  height: 100%;
+ 
+  cursor: none !important; /* força o desaparecimento */
+}
+
+body[data-theme="light"] {
+  background-color: #d1d1d1;
+  height: 100%;
+ 
+  cursor: none !important; /* força o desaparecimento */
+}
+
+
+p[data-theme="dark"] {
+  color:#8d8d8d
+}
+
+p[data-theme="light"] {
+  color: #313131;
+}
+
+h1[data-theme="dark"] {
+  color:#d1d1d1
+}
+
+h1[data-theme="light"] {
+  color: #111111;
+}
+
+h2[data-theme="dark"] {
+  color:#d1d1d1
+}
+
+h2[data-theme="light"] {
+  color: #111111;
+}
+
+h3[data-theme="dark"] {
+  color:#d1d1d1
+}
+
+h3[data-theme="light"] {
+  color: #111111;
+}
+
+
+span[data-theme="dark"] {
+  color:#d1d1d1
+}
+
+span[data-theme="light"] {
+  color: #111111;
+}
+
+span[data-theme="dark"] {
+  color:#d1d1d1
+}
+
+button[data-theme="light"] {
+  color: #111111;
+}
+
+button[data-theme="dark"] {
+  color:#d1d1d1
+}
+
+a[data-theme="light"] {
+  color: #111111;
+}
+
+path[data-theme="dark"] {
+stroke: #d1d1d1
+}
+
+path[data-theme="light"] {
+ stroke: #111111;
+}
+
+body[data-theme="dark"] .borda-mudar {
+  border-color: white;
+}
+
+body[data-theme="light"] .borda-mudar {
+  border-color: black;
+}
+body[data-theme="dark"] .experiencedata {
+  color: rgb(255, 255, 255);
+}
+
+body[data-theme="light"] .experiencedata {
+  color: rgb(0, 0, 0);
+}
+
+body[data-theme="dark"] .texto-theme {
+  color: rgb(255, 255, 255);
+}
+
+body[data-theme="light"] .texto-theme {
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+
 /* Overlay fullscreen preto */
 #splash {
   position: fixed;
@@ -13,19 +120,17 @@
   user-select: none;
 }
 
+
+
+
 /* Quando escondermos o splash */
 #splash.hidden {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.5s ease;
 }
-.backgrounddark{
-background-color: rgb(17, 17, 17);
-}
 
-.backgroundlight{
-background-color: rgb(212, 212, 212);
-}
+
 
 
 .test{
@@ -181,4 +286,30 @@ input:checked+.track {
   100% {
     transform: scale3d(1, 1, 1);
   }
+}
+
+
+
+   
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease, background 0.2s ease;
+}
+
+/* Estado de hover */
+.cursor.hover {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 0.253);
+  backdrop-filter: blur(1px);
+  
 }
