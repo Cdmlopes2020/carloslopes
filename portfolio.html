@@ -34,14 +34,15 @@
 
   <!-- ========== HEADER ========== -->
 
- <nav class="flex items-center justify-between text-white p-6">
+  <nav class="flex items-center justify-between text-white p-6">
     <!-- ESQUERDA -->
     <div id="navlinks" class="flex items-center space-x-6">
       <a data-theme="dark" href="index.html" id="linkCarlos"
         class="text-xs font-medium sm:text-sm md:text-sm font-['Fira_Mono']  textomudar meuslinks">
         Carlos Lopes
       </a>
-      <span data-theme="dark" class="text-xs sm:text-sm md:text-sm font-['Fira_Mono'] textomudar">Graphic & Web Design </span>
+      <span data-theme="dark" class="text-xs sm:text-sm md:text-sm font-['Fira_Mono'] textomudar">Graphic & Web Design
+      </span>
     </div>
 
     <!-- DIREITA BOTÃO TOOGLE -->
@@ -61,41 +62,39 @@
     </div>
   </nav>
   <!-- ========== BODY ========== -->
-
  
 
 
 
 
+  <section class="grid grid-cols-4 pt-24">
+    <div class=" col-span-4 sm:col-span-4 border-t border-white "></div> <!-- BORDER-->
 
-<section class="grid grid-cols-4 pt-24">   
-  <div class=" col-span-4 sm:col-span-4 border-t border-white "></div> <!-- BORDER-->
+    <div class="col-span-4 sm:col-span-2  flex flex-col  item-center pt-2 pl-12 pr-12">
+      <a href="" class="text-white font-['Fira_Mono'] ">geral@idealize.pt</a>
+      <a href="" class="text-white font-['Fira_Mono'] ">+351 927404221</a>
+    </div>
 
-<div class="col-span-4 sm:col-span-2  flex flex-col  item-center pt-2 pl-12 pr-12" > 
-<a href="" class="text-white font-['Fira_Mono'] ">geral@idealize.pt</a>
-<a href="" class="text-white font-['Fira_Mono'] ">+351 927404221</a>
-</div>
+    <div class="col-span-4 sm:col-span-2  flex flex-col  item-center sm:items-end sm:justify-end pt-2 pl-12 pr-12">
+      <a href="" class="text-white font-['Fira_Mono'] hover:font-medium">Instagram</a>
+      <a href="" class="text-white font-['Fira_Mono'] hover:font-medium">Linkedin</a>
+      <a href="" class="text-white font-['Fira_Mono'] hover:font-medium">Facebook</a>
+      <a href="" class="text-white font-['Fira_Mono'] hover:font-medium">Behance</a>
+    </div>
 
-<div class="col-span-4 sm:col-span-2  flex flex-col  item-center sm:items-end sm:justify-end pt-2 pl-12 pr-12"> 
-  <a href="" class="text-white font-['Fira_Mono'] hover:font-medium">Instagram</a> 
-  <a href="" class="text-white font-['Fira_Mono'] hover:font-medium">Linkedin</a>
-  <a href="" class="text-white font-['Fira_Mono'] hover:font-medium">Facebook</a>
-  <a href="" class="text-white font-['Fira_Mono'] hover:font-medium">Behance</a>
-</div>
- 
- 
+
 
   </section>
 
 
 
-<script>
-      function toggleText(button) {
-        const hiddenText = button.parentElement.nextElementSibling;
-        hiddenText.classList.toggle("hidden");
-        button.textContent = button.textContent === "+" ? "−" : "+";
-      }
-    </script>
+  <script>
+    function toggleText(button) {
+      const hiddenText = button.parentElement.nextElementSibling;
+      hiddenText.classList.toggle("hidden");
+      button.textContent = button.textContent === "+" ? "−" : "+";
+    }
+  </script>
   <script src="js/custom.js"></script>
 </body>
 

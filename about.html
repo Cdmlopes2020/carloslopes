@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Carlos | Grid estilo</title>
+  <title>CL | Graphic & Web Dsgn</title>
 
   <!-- ========== FONTS ========== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,8 +73,32 @@
           class="text-sm uppercase tracking-widest font-medium text-white font-['Fira_Mono'] textomudar">About Me</h2>
       </div>
 
-      <!-- Nome -->
-      <h1 data-theme="dark" class="text-5xl font-bold text-white mb-6 font-['Fira_Mono'] textomudar">Carlos Lopes</h1>
+      <h1 data-theme="dark" class="text-5xl font-bold text-white mb-6 font-['Fira_Mono'] textomudar hover-target"
+        id="nome-animado">
+        <!-- Texto será escrito aqui -->
+      </h1>
+
+      <script>
+        const mensagem = "Carlos Lopes";
+        const destino = document.getElementById("nome-animado");
+        let i = 0;
+
+        function escreverTexto() {
+          if (i < mensagem.length) {
+            destino.textContent += mensagem.charAt(i);
+            i++;
+            setTimeout(escreverTexto, 120);
+          }
+        }
+
+        window.addEventListener("load", () => {
+          destino.textContent = "|";
+          setTimeout(() => {
+            escreverTexto();
+          }, 500); // espera antes de começar a escrever
+        });
+      </script>
+
 
       <!-- Descrição -->
       <p data-theme="dark" class="text-gray-200 mb-8 leading-relaxed max-w-md textomudar">
@@ -91,7 +115,7 @@
 
       <div class="flex items-center gap-4 mb-6">
         <h2 data-theme="dark"
-          class="text-sm uppercase tracking-widest font-medium text-white font-['Fira_Mono'] textomudar hover-target">
+          class="text-sm uppercase tracking-widest font-medium text-white font-['Fira_Mono'] textomudar">
           Experience</h2>
 
       </div>
@@ -156,108 +180,379 @@
   </section>
 
 
+  <!------------------------------------------ SECTION TITTLE -------------------------------------------------->
+  <section class="relative bg-gray-300 pt-12 pb-12 overflow-hidden text-center">
 
+    <h1 class="text-6xl font-bold mb-2 uppercase hover-target">What do I do?</h1>
+    <h2 class="text-sm uppercase font-medium font-['Fira_Mono'] hover-target">An overview of my service</h2>
 
+  </section>
 
 
   <section class="grid grid-cols-4 pl-4 pr-4 lg:pl-64 lg:pr-64">
-    <!-- Esquerda -->
-    <div class="col-span-4 pt-24">
 
-  
-      <!-- Nome -->
-      <h1 data-theme="dark" class="text-6xl font-bold mb-2 textomudar uppercase" style="color:rgb(255, 255, 255)!important;">What do I do?</h1>
- 
-        <h2 data-theme="dark"
-          class="text-sm uppercase  font-medium text-white font-['Fira_Mono'] textomudar pl-6">An overview of
-          my service</h2>
-      
+    <!------------------------------------------ SERVIÇOS 1 -------------------------------------------------->
+
+    <div class="col-span-4  rounded-md text-gray-300 md:pl-32 pt-24 ">
+      <!-- TOP LEFT DOTS -->
+      <div class="flex space-x-2 mb-4">
+        <span class="w-3 h-3 bg-white rounded-full"></span>
+        <span class="w-3 h-3 bg-gray-600 rounded-full"></span>
+        <span class="w-3 h-3 bg-gray-600 rounded-full"></span>
+        <span class="w-3 h-3 bg-gray-600 rounded-full"></span>
+        <span class="w-3 h-3 bg-gray-600 rounded-full"></span>
+      </div>
+      <!-- TITLE -->
+      <div class="grid grid-cols-8 ">
+        <div class=" col-span-7">
+          <h2 data-theme="dark" class="font-bold text-lg mb-1 textomudar uppercase mineanimate">Graphic Design</h2>
+        </div>
+        <!-- TOP RIGHT BUTTON -->
+        <div id="toggle-arrow" class=" col-span-1 cursor-pointer text-gray-400 hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="5"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6" />
+          </svg>
+        </div>
+      </div>
+
+      <div>
+        <p data-theme="dark" class=" text-xs tracking-wide text-gray-500 mb-6 textomudar  pr-32 sm:pr-64">Development of
+          impactful visual solutions tailored to your business needs. From logo design, corporate identity, full
+          branding, advertising materials, presentations, packaging, and merchandising — everything is crafted to
+          communicate your brand with clarity, consistency, and creativity.</p>
+      </div>
+
+      <!-- HIDDEN CONTENT -->
+      <div id="design-content" class="flex gap-8 items-center hidden pb-12">
+        <img src="assets/avatar.jpg" alt="Full Design Package" class="w-56 rounded-lg object-cover shadow-lg" />
+
+        <ul class="space-y-3 text-sm max-w-xs pl-6">
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="gray" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span data-theme="dark" class="textomudar">Visual Identity Design</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="gray" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+
+            <span data-theme="dark" class="textomudar">Business Cards & Stationery Design</span>
+
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="gray" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+
+            <span data-theme="dark" class="textomudar">Flyers, Posters & Banners Design</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="gray" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+
+            <span data-theme="dark" class="textomudar">Brand Refresh & Modernization</span>
+          </li>
+        </ul>
+      </div>
+
     </div>
 
+    <!------------------------------------------ SERVIÇOS 2 -------------------------------------------------->
 
-    <!--SERVIÇOS 1 -->
-    <div class="col-span-4  rounded-md text-gray-300 relative md:pl-32 pt-24">
-  <!-- Top left dots -->
-  <div class="flex space-x-2 mb-4">
-    <span class="w-3 h-3 bg-white rounded-full"></span>
-    <span class="w-3 h-3 bg-gray-600 rounded-full"></span>
-    <span class="w-3 h-3 bg-gray-600 rounded-full"></span>
-    <span class="w-3 h-3 bg-gray-600 rounded-full"></span>
-    <span class="w-3 h-3 bg-gray-600 rounded-full"></span>
-  </div>
+    <div class="col-span-4  rounded-md text-gray-300 md:pl-32 pt-12">
+      <!-- TOP LEFT DOTS -->
+      <div class="flex space-x-2 mb-4">
+        <span class="w-3 h-3 bg-white rounded-full"></span>
+        <span class="w-3 h-3 bg-white rounded-full"></span>
+        <span class="w-3 h-3 bg-gray-600 rounded-full"></span>
+        <span class="w-3 h-3 bg-gray-600 rounded-full"></span>
+        <span class="w-3 h-3 bg-gray-600 rounded-full"></span>
+      </div>
+      <!-- TITLE -->
+      <div class="grid grid-cols-8">
+        <div class=" col-span-7">
+          <h2 data-theme="dark" class="font-bold text-lg mb-1 textomudar uppercase">Web Design e Development</h2>
+        </div>
+        <!-- TOP RIGHT BUTTON -->
+        <div id="toggle-arrow1" class=" col-span-1 cursor-pointer text-gray-400 hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="5"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6" />
+          </svg>
+        </div>
+      </div>
 
-  <!-- Title and subtitle -->
-  <h2  data-theme="dark" class="font-bold text-lg mb-1 textomudar uppercase" style="color:rgb(255, 255, 255)!important;">Graphic Design</h2>
-  <p  data-theme="dark" class="uppercase text-xs tracking-wide text-gray-500 mb-6 textomudar">Logo Creation, Typography, Identity, Branding</p>
+      <div>
+        <p data-theme="dark" class=" text-xs tracking-wide text-gray-500 mb-6 textomudar pr-32 sm:pr-64">Creation of
+          modern,
+          responsive, and functional websites designed to elevate your online presence. From interface design to
+          technical development, we deliver intuitive experiences optimized for all devices and tailored to your
+          business goals.</p>
+      </div>
 
- <!-- DIV QUE VAI APARECER -->
-  <div id="design-content" class="custombg flex bg-gap-8 items-center hidden border-t borda-mudar pt-6">
-    
-    <!-- IMAGEM -->
-    <img src="assets/avatar.jpg" alt="Full Design Package" class="w-56 rounded-lg object-cover shadow-lg" />
+      <!-- HIDDEN CONTENT -->
+      <div id="design-content1" class="flex gap-8 items-center hidden pb-12">
+        <img src="assets/avatar.jpg" alt="Full Design Package" class="w-56 rounded-lg object-cover shadow-lg" />
 
-    <!-- Checklist -->
-    <ul class="space-y-3 text-sm max-w-xs pl-12">
-      <li class="flex items-center gap-2">
-        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" >
-          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-        </svg>
-        <span>Pricing starts at $5,999</span>
-      </li>
-      <li class="flex items-center gap-2">
-        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" >
-          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-        </svg>
-        <span>Pricing starts at $5,999</span>
-      </li>
-      <li class="flex items-center gap-2">
-        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" >
-          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-        </svg>
-        <span>Pricing starts at $5,999</span>
-      </li>
-      <li class="flex items-center gap-2">
-        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" >
-          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-        </svg>
-        <span>Pricing starts at $5,999</span>
-      </li>
-    </ul>
-  </div>
+        <ul class="space-y-3 text-sm max-w-xs pl-6">
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="gray" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span data-theme="dark" class="textomudar">Responsive Website Design
 
-  <!-- BOTÃO PARA ABRIR SECÇÃO -->
-  <div  class="absolute top-28 right-64 cursor-pointer text-gray-400 hover:text-white">
-    <button id="toggle-arrow" data-theme="dark" onclick="toggleText(this)"
-            class="text-white text-3xl textomudar hover-target">+</button>
-  </div>
-</div>
+            </span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="gray" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span data-theme="dark" class="textomudar">High-Converting Landing Pages
+
+            </span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="gray" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span data-theme="dark" class="textomudar">UI/UX Design for Web & Mobile Apps
+
+            </span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="gray" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span data-theme="dark" class="textomudar">Custom eCommerce Design</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <!------------------------------------------ SERVIÇOS 3 -------------------------------------------------->
+
+    <div class="col-span-4  rounded-md text-gray-300 md:pl-32 pt-12">
+      <!-- TOP LEFT DOTS -->
+      <div class="flex space-x-2 mb-4">
+        <span class="w-3 h-3 bg-white rounded-full"></span>
+        <span class="w-3 h-3 bg-white rounded-full"></span>
+        <span class="w-3 h-3 bg-white rounded-full"></span>
+        <span class="w-3 h-3 bg-gray-600 rounded-full"></span>
+        <span class="w-3 h-3 bg-gray-600 rounded-full"></span>
+      </div>
+      <!-- TITLE -->
+      <div class="grid grid-cols-8">
+        <div class=" col-span-7">
+          <h2 data-theme="dark" class="font-bold text-lg mb-1 textomudar uppercase">Social Media</h2>
+        </div>
+        <!-- TOP RIGHT BUTTON -->
+        <div id="toggle-arrow2" class=" col-span-1 cursor-pointer text-gray-400 hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="gray" stroke-width="5"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6" />
+          </svg>
+        </div>
+      </div>
+
+      <div>
+        <p data-theme="dark" class=" text-xs tracking-wide text-gray-500 mb-6 textomudar pr-32 sm:pr-64">Strategic
+          management
+          of your social media platforms with creative, relevant content that strengthens your brand identity. We
+          develop publishing plans, copywriting, visual design, and campaigns to boost reach, engagement, and audience
+          loyalty.</p>
+      </div>
+
+      <!-- HIDDEN CONTENT -->
+      <div id="design-content2" class="flex gap-8 items-center hidden pb-12">
+        <img src="assets/avatar.jpg" alt="Full Design Package" class="w-56 rounded-lg object-cover shadow-lg" />
+
+        <ul class="space-y-3 text-sm max-w-xs pl-6">
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="gray" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span data-theme="dark" class="textomudar">Visual Content Creation for Social Media</span>
+          </li>
 
 
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="gray" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span data-theme="dark" class="textomudar">Page Management & Post Scheduling</span>
+          </li>
 
 
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="gray" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span data-theme="dark" class="textomudar">Monthly Content Calendar Planning
+
+            </span>
+          </li>
 
 
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="gray" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span data-theme="dark" class="textomudar">Ad Campaign Visuals
+
+            </span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <!------------------------------------------ SERVIÇOS 4 -------------------------------------------------->
+
+    <div class="col-span-4  rounded-md text-gray-300 md:pl-32 pt-12">
+      <!-- TOP LEFT DOTS -->
+      <div class="flex space-x-2 mb-4">
+        <span class="w-3 h-3 bg-white rounded-full"></span>
+        <span class="w-3 h-3 bg-white rounded-full"></span>
+        <span class="w-3 h-3 bg-white rounded-full"></span>
+        <span class="w-3 h-3 bg-white rounded-full"></span>
+        <span class="w-3 h-3 bg-gray-600 rounded-full"></span>
+      </div>
+      <!-- TITLE -->
+      <div class="grid grid-cols-8">
+        <div class=" col-span-7">
+          <h2 data-theme="dark" class="font-bold text-lg mb-1 textomudar uppercase">Video Editing</h2>
+        </div>
+        <!-- TOP RIGHT BUTTON -->
+        <div id="toggle-arrow3" class=" col-span-1 cursor-pointer text-gray-400 hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="5"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6" />
+          </svg>
+        </div>
+      </div>
+
+      <div>
+        <p data-theme="dark" class=" text-xs tracking-wide text-gray-500 mb-6 textomudar pr-32 sm:pr-64">Professional
+          video
+          editing that brings your message to life. From promotional videos, corporate content, and social media reels
+          to campaign visuals, we craft engaging narratives that capture attention and elevate your brand’s image.</p>
+      </div>
+
+      <!-- HIDDEN CONTENT -->
+      <div id="design-content3" class="flex gap-8 items-center hidden pb-12">
+        <img src="assets/avatar.jpg" alt="Full Design Package" class="w-56 rounded-lg object-cover shadow-lg" />
+
+        <ul class="space-y-3 text-sm max-w-xs pl-6">
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="gray" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span data-theme="dark" class="textomudar">Promotional & Commercial Video Editing</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="gray" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span data-theme="dark" class="textomudar">Social Media Video Clips (Reels, Shorts, TikToks)</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="gray" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span data-theme="dark" class="textomudar">YouTube Video Editing</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="gray" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span data-theme="dark" class="textomudar">Motion Graphics & Animated Text</span>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+    <!------------------------------------------ SERVIÇOS 5 -------------------------------------------------->
+
+    <div class="col-span-4  rounded-md text-gray-300 md:pl-32 pt-12">
+      <!-- TOP LEFT DOTS -->
+      <div class="flex space-x-2 mb-4">
+        <span class="w-3 h-3 bg-white rounded-full"></span>
+        <span class="w-3 h-3 bg-white rounded-full"></span>
+        <span class="w-3 h-3 bg-white rounded-full"></span>
+        <span class="w-3 h-3 bg-white rounded-full"></span>
+        <span class="w-3 h-3 bg-white rounded-full"></span>
+      </div>
+      <!-- TITLE -->
+      <div class="grid grid-cols-8">
+        <div class=" col-span-7">
+          <h2 data-theme="dark" class="font-bold text-lg mb-1 textomudar uppercase">Illustration</h2>
+        </div>
+        <!-- TOP RIGHT BUTTON -->
+        <div id="toggle-arrow4" class=" col-span-1 cursor-pointer text-gray-400 hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="gray" stroke-width="5"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6" />
+          </svg>
+        </div>
+      </div>
+
+      <div>
+        <p data-theme="dark" class=" text-xs tracking-wide text-gray-500 mb-6 textomudar pr-32 sm:pr-64">Creative,
+          custom
+          illustrations that give your projects a unique touch. Whether for branding, editorial, packaging, social
+          media, or merchandising, we transform ideas into visuals with style, purpose, and personality.</p>
+      </div>
+
+      <!-- HIDDEN CONTENT -->
+      <div id="design-content4" class="flex gap-8 items-center hidden pb-12">
+        <img src="assets/avatar.jpg" alt="Full Design Package" class="w-56 rounded-lg object-cover shadow-lg" />
+
+        <ul class="space-y-3 text-sm max-w-xs pl-6">
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span data-theme="dark" class="textomudar">Custom Digital Illustrations</span>
+
+          </li>
+           <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span data-theme="dark" class="textomudar">Character Design & Development
+
+</span>
+
+          </li>
+           <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span data-theme="dark" class="textomudar">Editorial & Book Illustrations</span>
+
+          </li>
+           <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span data-theme="dark" class="textomudar">Illustrated Social Media Content</span>
+
+          </li>
+        </ul>
+      </div>
+
+    </div>
 
   </section>
 
 
 
-  <div class="grid grid-cols-9 pl-12 pr-12">
-    <div class="sm:col-span-3"> </div>
-    <a href="portfolio.html" class="col-span-9 sm:col-span-3 rounded-xl  customcard pt-32 sm:pt-12 pb-2">
-      <div class="grid-rows-1 flex ">
-        <h1 data-theme="dark" class=" pl-4 font-['Fira_Mono'] portfolio textomudar ">Portfólio</h1>
-        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-          <g id="SVGRepo_iconCarrier">
-            <path data-theme="dark" d="M7 17L17 7M17 7H8M17 7V16" stroke-width="1" stroke-linecap="round"
-              stroke-linejoin="round" class="textomudar"></path>
-          </g>
-        </svg>
-      </div>
-    </a>
-  </div>
+
+
 
   <section class="grid grid-cols-4 pt-24">
     <div data-theme="dark" class=" col-span-4 sm:col-span-4 border-t borda-mudar "></div> <!-- BORDER-->
@@ -288,13 +583,35 @@
     }
 
 
-    
-  const arrow = document.getElementById('toggle-arrow');
-  const content = document.getElementById('design-content');
 
-  arrow.addEventListener('click', () => {
-    content.classList.toggle('hidden'); // alterna visibilidade da imagem + checklist
-  });
+    const arrow = document.getElementById('toggle-arrow');
+    const arrow1 = document.getElementById('toggle-arrow1');
+    const arrow2 = document.getElementById('toggle-arrow2');
+    const arrow3 = document.getElementById('toggle-arrow3');
+    const arrow4 = document.getElementById('toggle-arrow4');
+    const content = document.getElementById('design-content');
+    const content1 = document.getElementById('design-content1');
+    const content2 = document.getElementById('design-content2');
+    const content3 = document.getElementById('design-content3');
+    const content4 = document.getElementById('design-content4');
+
+    arrow.addEventListener('click', () => {
+      content.classList.toggle('hidden'); // alterna visibilidade da imagem + checklist
+    });
+    arrow1.addEventListener('click', () => {
+      content1.classList.toggle('hidden'); // alterna visibilidade da imagem + checklist
+    });
+    arrow2.addEventListener('click', () => {
+      content2.classList.toggle('hidden'); // alterna visibilidade da imagem + checklist
+    });
+    arrow3.addEventListener('click', () => {
+      content3.classList.toggle('hidden'); // alterna visibilidade da imagem + checklist
+    });
+    arrow4.addEventListener('click', () => {
+      content4.classList.toggle('hidden'); // alterna visibilidade da imagem + checklist
+    });
+
+
 
   </script>
   <script src="js/custom.js"></script>

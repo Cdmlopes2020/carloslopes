@@ -56,6 +56,7 @@ function animate() {
 
   requestAnimationFrame(animate);
 }
+
 animate();
 
 // Hover effects
@@ -67,6 +68,9 @@ hoverTargets.forEach(el => {
     cursor.classList.remove("hover");
   });
 });
+
+
+
 
 
 

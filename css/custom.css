@@ -165,8 +165,24 @@ font-weight: 600;
 
 }
 
+.customcard2{
+  display: flex;           
+  gap: 4rem;                 
+  padding: 0.75em;
+  margin-top: 3rem;
+  color: rgb(143, 143, 143);
+  border: solid 1px rgba(189, 188, 188, 0.233);
+  background-color:  #020202f5;
+}
+ 
+  #menu {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .customcard:hover {
-  background-color: rgba(49, 49, 49, 0.15);
+  background-color: rgba(0, 0, 0, 0.493);
   color: white;
   border: solid 1px rgba(255, 255, 255, 0.185);
 
@@ -184,8 +200,8 @@ font-weight: 600;
   inset: 0; /* top: 0; right: 0; bottom: 0; left: 0 */
   z-index: 50; /* ou ajusta para ficar por cima de fundo mas atrás de UI */
   pointer-events: none; /* permite clicar através */
-  mix-blend-mode: overlay; /* efeito de sobreposição subtil */
-  opacity: 0.5; /* controla a intensidade do noise */
+  mix-blend-mode:lighten; /* efeito de sobreposição subtil */
+  opacity: 0.2; /* controla a intensidade do noise */
 }
 
 .noise-overlay img {
@@ -253,9 +269,10 @@ input:checked+.track {
 .customcard:hover .about {
 
     animation: tada 0.85s ease-in-out;
-    
-  
+     
 }
+
+
 .customcard:hover .portfolio {
 
     animation: tada 0.85s ease-in-out;
